@@ -2,28 +2,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.scss" rel="stylsheet">
-    <link href="menu la-palette-du-goût.html">
-    <link href="menu le-délice-des-sens.html">
-    <link href="menu la-note-enchantée.html">
-    <link href="menu à-la-française.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./index.css">
     <title>Ohmyfood</title>
 </head>
 <body>
     <header>
-        <img src="./Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="Logo de Ohmyfood">
-        <div class="location-restaurant">
+        <img  class="logo" src="./Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="Logo de Ohmyfood">
+        <form method="get" action="#" class =" navbar location-restaurant "><!--ajout de method get + action -->
             <i class="fa-solid fa-location-dot"></i>
-            <a href="index.html" class="location-city">Paris, Belleville</a>
-        </div>
+            <input type="search" class="location-city" placeholder ="Paris, Belleville">
+           <!-- <a href="index.html" class="location-city">Paris, Belleville</a> modifiction c'est un input non un lien              -->
+        </form>
     </header>
 
     <main class="container">
-        <div class="presentation">
+        <section class="presentation"><!-- c'est mieux une section  -->
             <h1>Réserver le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a href="#presentation-button">Explorer nos restaurants</a>
+        <!--cest pour pouvoir travailler le bouton avec les couleurs -->   
+        <div class="btn">
+            <a class="homepage__info homepage__btn--purple" href="#restaurants">Explorer nos restaurants</a>  
         </div>
+            </section >
         <section class="list-step">
             <div class="functioning">
                 <h2>Fonctionnement</h2>

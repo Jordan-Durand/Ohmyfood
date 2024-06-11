@@ -1,1 +1,18 @@
-/*# sourceMappingURL=index.css.map */
+/****** Version mobile ******/
+.list-restaurant {
+  display: flex;
+  flex-direction: column;
+}
+
+.restaurant {
+  width: 100%;
+  height: 100px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+header__img {
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */
