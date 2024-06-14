@@ -8,8 +8,167 @@ $background-grey-color: #EAEAEA;
 $background-lightgrey-color: #F6F6F6;
 $background-bold-grey:#353535;
 
+/****** Mixins ******/
+@mixin bouton-violet {
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    height: 72px;
+    background: $background-lightgrey-color; 
+}
+
+@mixin round-number {
+    border-radius: 25px;
+    padding:10px;
+    padding-top:4px;
+    padding-bottom:4px;
+    color:white;
+    background:$primary-color;
+}
+
+
 /****** Version mobile ******/
 /****** Général ******/
 
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    font-family: "Roboto",sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
 
 /****** Header homepage ******/
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.logo {
+    height: 31px;
+    margin: 20px auto;
+   
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+    justify-content: center;
+}
+ 
+.location-restaurant {
+    flex-direction: row;
+    align-items: center; 
+    height: 50px;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px #00000040, 
+          inset 0px 2px 5px 0px #00000040;       
+    background: $background-grey-color;
+    gap: 17px;
+    z-index: 1;  
+}
+
+input {
+    border: none;
+    outline: none;
+    background: none; 
+    width: 130px;
+    font-weight: bold;
+    font-size: 16px;
+    
+    &::placeholder{
+        color: black; 
+        width: 120px;
+    }    
+}
+
+/****** Section info ******/
+
+.presentation  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-lightgrey-color;
+    text-align: center;
+    & p {
+        font-weight: 300;
+        font-size: 18px;
+        margin: 0;
+    }
+    & h1 {
+        width: 75%;
+        
+    }
+}
+
+/****** Boutton ******/
+
+.btn {
+    margin-top: 30px;
+    margin-bottom: 57px;
+    width: 228px;
+    }
+    
+.homepage__btn--purple {
+    border-radius: 25px;
+    background: linear-gradient($secondary-color -11%, $primary-color);
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    justify-content: center;
+    transition: 1s;
+    &:hover  {
+        box-shadow: 0px 6px 12px 3px rgba(0, 0, 0, 0.25);
+       opacity: 0.80;   
+        transition: 1s;   
+        }                
+    }
+
+    .list-step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .functioning {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .choice {
+        @include bouton-violet();
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        gap: 25px;
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        .step-number {
+            @include round-number();
+            margin-left: -10px;
+        }
+        .content {
+            display: flex;
+            gap: 25px;
+            list-style: none initial;
+        }
+    }  
+
+    .icon:hover {
+        color: var(--secondary-color);
+    }
