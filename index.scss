@@ -55,8 +55,8 @@ header {
 .logo {
     height: 31px;
     margin: 20px auto;
-   
-}
+    width: 100%;
+   }
 .navbar{
     display: flex;
     flex-direction: column;
@@ -115,7 +115,7 @@ input {
     margin-top: 30px;
     margin-bottom: 57px;
     width: 228px;
-    }
+}
     
 .homepage__btn--purple {
     border-radius: 25px;
@@ -135,22 +135,21 @@ input {
         box-shadow: 0px 6px 12px 3px rgba(0, 0, 0, 0.25);
        opacity: 0.80;   
         transition: 1s;   
-        }                
-    }
+    }                
+}
+    
+    
 
-    .list-step {
+.list-step {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: 100%;
         padding: 10px;
-    }
-
     .functioning {
         display: flex;
         flex-direction: column;
     }
-
     .choice {
         @include bouton-violet();
         display: flex;
@@ -167,8 +166,34 @@ input {
             gap: 25px;
             list-style: none initial;
         }
-    }  
+    } 
+}     
 
     .icon:hover {
         color: var(--secondary-color);
     }
+
+.list-restaurant {
+    background-color: $background-grey-color;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    .restaurant {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        & a {
+            border: solid 2px white;
+            border-radius: 25%;
+        }
+        .card {
+            width: 100%;
+        }
+        & img {
+            width: 100%;
+            height: 170px;
+        }
+               
+    }
+} 
+      
