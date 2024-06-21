@@ -52,10 +52,11 @@ header {
     justify-content: center;
     width: 100%;
 }
+
 .logo {
     height: 31px;
     margin: 20px auto;
-    width: 100%;
+    width: 90%;
    }
 .navbar{
     display: flex;
@@ -70,10 +71,12 @@ header {
     height: 50px;
     text-align: center;
     box-shadow: 0px 4px 4px 0px #00000040, 
-          inset 0px 2px 5px 0px #00000040;       
+    inset 0px 2px 5px 0px #00000040;       
     background: $background-grey-color;
     gap: 17px;
-    z-index: 1;  
+    z-index: 1; 
+    margin: 0; 
+    width: 100%;
 }
 
 input {
@@ -138,8 +141,6 @@ input {
     }                
 }
     
-    
-
 .list-step {
         display: flex;
         flex-direction: column;
@@ -169,15 +170,14 @@ input {
     } 
 }     
 
-    .icon:hover {
-        color: var(--secondary-color);
-    }
+.icon:hover {
+    color: var(--secondary-color);
+}
 
 .list-restaurant {
     background-color: $background-grey-color;
     display: flex;
     flex-direction: column;
-    margin: auto;
     width: 100%;
     .restaurant {
         display: flex;
@@ -186,21 +186,26 @@ input {
         & a {
             display: flex;
             flex-direction: column;
-            border: solid 2px white;
-            border-radius: 10%;
         }
         .card {
-            width: 100%;
+            width: 80%;
         }
         & img {
             width: 100%;
             height: 170px;
         }
         .card-news {
-            background-color: $tertiairy-color;
-            width: 20%;
-            padding-left: 15px;
-        }      
+            display: flex;
+        }
     }
 } 
+
+footer {
+   background-color: $background-bold-grey;
+   display: flex;
+}
+
+.footer {
+    color: white;
+}
       

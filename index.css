@@ -28,7 +28,7 @@ header {
 .logo {
   height: 31px;
   margin: 20px auto;
-  width: 100%;
+  width: 90%;
 }
 
 .navbar {
@@ -47,6 +47,8 @@ header {
   background: #EAEAEA;
   gap: 17px;
   z-index: 1;
+  margin: 0;
+  width: 100%;
 }
 
 input {
@@ -157,7 +159,6 @@ input::placeholder {
   background-color: #EAEAEA;
   display: flex;
   flex-direction: column;
-  margin: auto;
   width: 100%;
 }
 .list-restaurant .restaurant {
@@ -168,18 +169,23 @@ input::placeholder {
 .list-restaurant .restaurant a {
   display: flex;
   flex-direction: column;
-  border: solid 2px white;
-  border-radius: 10%;
 }
 .list-restaurant .restaurant .card {
-  width: 100%;
+  width: 80%;
 }
 .list-restaurant .restaurant img {
   width: 100%;
   height: 170px;
 }
 .list-restaurant .restaurant .card-news {
-  background-color: #99e2d0;
-  width: 20%;
-  padding-left: 15px;
+  display: flex;
+}
+
+footer {
+  background-color: #353535;
+  display: flex;
+}
+
+.footer {
+  color: white;
 }/*# sourceMappingURL=index.css.map */
