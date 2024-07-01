@@ -172,6 +172,7 @@ input::placeholder {
   position: relative;
   box-sizing: border-box;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 .list-restaurant .restaurant a {
   display: flex;
@@ -271,4 +272,12 @@ footer a {
   text-decoration: none;
   display: flex;
   align-items: center;
+  gap: 10px;
+}
+
+/****** Pages restaurants ******/
+.image-menu {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }/*# sourceMappingURL=index.css.map */

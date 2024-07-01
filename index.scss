@@ -216,6 +216,7 @@ input {
         position: relative;
         box-sizing: border-box;
         margin-bottom: 20px;
+        margin-left: 10px;
         & a {
             display: flex;
             flex-direction: column;
@@ -311,6 +312,14 @@ footer {
     text-decoration: none;
     display: flex;
     align-items: center;
+    gap: 10px;
    }
+}
+
+/****** Pages restaurants ******/
+
+.image-menu {
+    object-fit: cover;
+    width: 100%;
 }
    
