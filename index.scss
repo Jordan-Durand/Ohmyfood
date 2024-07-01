@@ -86,7 +86,6 @@ header {
 .logo {
     height: 31px;
     margin: 20px auto;
-    width: 90%;
    }
 .navbar{
     display: flex;
@@ -175,7 +174,6 @@ input {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
         padding: 10px;
     .functioning {
         display: flex;
@@ -212,11 +210,12 @@ input {
     .restaurant {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 95%;
         border-radius: 20px;
         background-color: white;
         position: relative;
         box-sizing: border-box;
+        margin-bottom: 20px;
         & a {
             display: flex;
             flex-direction: column;
@@ -240,6 +239,8 @@ input {
             width: 100%;
             height: 170px;
             object-fit: cover;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
         }
         .card-content {
             display: flex;
@@ -305,8 +306,11 @@ footer {
     flex-direction: column;
     gap: 10px;
    }
-   .icon {
-    
+   a {
+    color: white; // Cette ligne colore les liens en blanc
+    text-decoration: none;
+    display: flex;
+    align-items: center;
    }
 }
    
