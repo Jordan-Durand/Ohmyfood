@@ -54,6 +54,8 @@ $background-bold-grey:#353535;
 
 
 /****** Version mobile ******/
+
+
 /****** Général ******/
 
 body {
@@ -128,6 +130,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: $background-lightgrey-color;
     text-align: center;
     & p {
@@ -343,6 +346,33 @@ footer {
     }
 }
 
+ nav {
+        display: flex;
+        gap: 130px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+      & .fa-arrow-left {
+        padding: 5px;
+      }
+      & img {
+        width: 50%;
+      }
+}
+
+.image-menu img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.background {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px ;
+}
+
 .menus-content {
     display: flex;
     flex-wrap: wrap;
@@ -382,7 +412,8 @@ footer {
                 content: "";
                 width: 3rem;
                 height: .2rem;
-                background-color: ;
+                background-color: #99E2D0
+                ;
                 position: absolute;
                 left: 0;
                 bottom: 0;
@@ -431,7 +462,8 @@ footer {
             justify-content: flex-end;
         }
         &__okay {
-            background-color:;
+            background-color:#99E2D0
+            ;
             margin: -1rem -5rem -1rem 1rem;
             width: 4rem;
             display: flex;
@@ -456,8 +488,32 @@ footer {
             animation-name: rotation;
         }
         &__icons {
-            color: ;
+            color: #99E2D0;
         }
     }
 }
+
    
+/****** Version tablette et desktop ******/
+/****** Homepage ******/
+@media (min-width: 768px) {
+.list-step {
+    display: flex;
+    flex-direction: column;
+    .functioning {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+.list-restaurant {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .restaurant {
+        width: 50%;
+    }
+}
+
+}
